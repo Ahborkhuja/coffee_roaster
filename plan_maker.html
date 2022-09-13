@@ -91,16 +91,16 @@
                 <h2>How do you drink your coffee?</h2>
                 <img src="./img/arrow.svg" alt="arrow">
               </a>
-              <form class="inner_list">
-                <input type="radio" name="coffee_type" class="inner-item" hidden onclick="myFunction(this,'#0E8784')">
-                  <h4>Capsule</h4>
-                  <p>Compatible with Nespresso systems and similar brewers</p>
+              <ul class="inner_list">
+                <li class="inner_item active">
+                    <h4>Capsule</h4>
+                    <p>Compatible with Nespresso systems and similar brewers</p>
                 </li>
-                <li class="inner-item" onclick="myFunction(this,'#0E8784')">
+                <li class="inner_item">
                   <h4>Filter</h4>
                   <p>For pour over or drip methods like Aeropress, Chemex, and V60</p>
                 </li>
-                <li class="inner-item" onclick="myFunction(this,'#0E8784','ffffff')">
+                <li class="inner_item">
                   <h4>Espresso</h4>
                   <p>Dense and finely ground beans for an intense, flavorful experience</p>
                 </li>
@@ -139,15 +139,7 @@
       </div>
     </div>
   </footer>
-  <script>
-    // function myFunction() {
-    //   document.getElementById("pref", "bety", "quantity", "gropt", "delivery").style.opacity = 1;
-    // }
-    function myFunction(element, color,) {
-      element.style.background = color;
-      H4.color=color;
-    }
-  </script>
+  <script src="./js/index.js"></script>
 </body>
 
 </html>
