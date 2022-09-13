@@ -168,7 +168,7 @@ body {
   color: #333D4B;
 }
 
-.inner-item:hover {
+.inner_item:hover {
   background-color: var(--opt-hov);
 }
 .inner_item:active,
