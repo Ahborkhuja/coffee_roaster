@@ -77,18 +77,29 @@ body {
 }
 
 /* coffee making additions and steps */
+.coffee_making {
+  padding-bottom: 168px;
+}
+
 .coffee_making_inner {
   margin: 0 85px;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  flex-wrap:wrap;
 }
 
 .making_steps {
   display: flex;
   flex-direction: column;
   align-items: baseline;
+}
+
+.step {
+  opacity: 0.4;
+}
+
+.step:hover {
+  opacity: 0.6;
 }
 
 .step a {
@@ -115,7 +126,17 @@ body {
   color: #333D4B;
 }
 
-.second_column {
+.step:active,
+.step.actstep {
+  opacity: 1;
+}
+
+.step:active,
+.step.actstep span {
+  color: var(--opt-act);
+}
+
+.second_column_wrap {
   margin-left: 125px;
 }
 
@@ -139,14 +160,14 @@ body {
 }
 
 .inner_list {
-  margin-top: 56px;
+  margin: 56px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .inner_item {
-  padding: 32px 28px 84px 28px;
+  padding: 32px 25px 84px 25px;
   background-color: var(--opt-def);
   border-radius: 8px;
   transition: all 0.3s ease-in-out;
@@ -172,6 +193,7 @@ body {
 .inner_item:hover {
   background-color: var(--opt-hov);
 }
+
 .inner_item:active,
 .inner_item.active {
   background-color: var(--opt-act);
@@ -185,4 +207,42 @@ body {
 .inner_item:active p,
 .inner_item.active p {
   color: #FEFCF7;
+}
+
+.order_sum {
+  width: 730px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+}
+
+.sum {
+  background: #2C343E;
+  border-radius: 10px;
+  padding: 27px 64px;
+  mix-blend-mode: normal;
+  /* opacity: 0.15; */
+}
+
+.sum p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.sum span {
+  font-family: var(--Fs);
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 40px;
+  color: #FFFFFF;
+}
+
+.btn-link {
+  margin-top: 40px;
+  border: none;
 }
