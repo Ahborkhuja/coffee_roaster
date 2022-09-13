@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/maker.css">
+  <script src="https://kit.fontawesome.com/0d6ca35ccf.js" crossorigin="anonymous"></script>
+  <title>Cofferoasters</title>
+</head>
+
+<body>
+  <header class="site_header">
+    <div class="container header_inner">
+      <a class="logo" href="./index.html">
+        <img src="./img/logo.svg" alt="Coffesto logo">
+      </a>
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="nav-item"><a href="./index.html" class="nav-link">HOME</a></li>
+          <li class="nav-item"><a href="./about.html" class="nav-link">ABOUT US</a></li>
+          <li class="nav-item"><a href="./plan_maker.html" class="nav-link">Create your plan</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="main">
+      <div class="container">
+        <div class="main-inner">
+          <h1>Create a plan</h1>
+          <p>Build a subscription plan that best fits your needs. We offer an assortment of the best artisan coffees
+            from around the globe delivered fresh to your door.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="Working_proccess">
+      <div class="container">
+        <div class="process-inner">
+          <div class="graph">
+            <div class="line"></div>
+            <span class="oval"></span>
+            <span class="oval"></span>
+            <span class="oval"></span>
+          </div>
+          <ul class="process-list">
+            <li class="process-item">
+              <span>01</span>
+              <h3>Pick your coffee</h3>
+              <p>Select from our evolving range of artisan coffees. Our beans are ethically sourced and we pay fair
+                prices for them. There are new coffees in all profiles every month for you to try out.</p>
+            </li>
+            <li class="process-item">
+              <span>02</span>
+              <h3>Choose the frequency</h3>
+              <p>Customize your order frequency, quantity, even your roast style and grind type. Pause, skip or cancel
+                your subscription with no commitment through our online portal.</p>
+            </li>
+            <li class="process-item">
+              <span>03</span>
+              <h3>Receive and enjoy!</h3>
+              <p>We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning world-class
+                coffees curated to provide a distinct tasting experience.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="coffee_making">
+      <div class="container">
+        <div class="coffee_making_inner">
+          <ul class="making_steps">
+            <li class="step">
+              <a href="#pref">
+                <span>01</span>
+                <h4>Preferences</h4>
+              </a>
+            </li>
+            <li class="step">
+              <a href="#bety">
+                <span>02</span>
+                <h4>Bean Type</h4>
+              </a>
+            </li>
+          </ul>
+          <ul class="second_column">
+            <li class="second_row">
+              <a href="#pref" class="title_item">
+                <h2>How do you drink your coffee?</h2>
+                <img src="./img/arrow.svg" alt="arrow">
+              </a>
+              <form class="inner_list">
+                <input type="radio" name="coffee_type" class="inner-item" hidden onclick="myFunction(this,'#0E8784')">
+                  <h4>Capsule</h4>
+                  <p>Compatible with Nespresso systems and similar brewers</p>
+                </li>
+                <li class="inner-item" onclick="myFunction(this,'#0E8784')">
+                  <h4>Filter</h4>
+                  <p>For pour over or drip methods like Aeropress, Chemex, and V60</p>
+                </li>
+                <li class="inner-item" onclick="myFunction(this,'#0E8784','ffffff')">
+                  <h4>Espresso</h4>
+                  <p>Dense and finely ground beans for an intense, flavorful experience</p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <a href="./plan_maker.html" class="btn-link">Create your plan</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="logo-navbar">
+          <a class="logo" href="./index.html">
+            <img src="./img/foot_logo.svg" alt="Logo">
+          </a>
+          <ul class="navbar-list">
+            <li class="nav-item"><a href="./index.html" class="nav-link fo_ho">HOME</a></li>
+            <li class="nav-item"><a href="./about.html" class="nav-link fo_ho">ABOUT US</a></li>
+            <li class="nav-item"><a href="./plan_maker.html" class="nav-link fo_ho">Create your plan</a></li>
+          </ul>
+        </div>
+        <div class="icons">
+          <a href="facebook.com" class="icon-link">
+            <i class="fa-brands fa-square-facebook"></i>
+          </a>
+          <a href="twitter.com" class="icon-link">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="instagram.com" class="icon-link">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    // function myFunction() {
+    //   document.getElementById("pref", "bety", "quantity", "gropt", "delivery").style.opacity = 1;
+    // }
+    function myFunction(element, color,) {
+      element.style.background = color;
+      H4.color=color;
+    }
+  </script>
+</body>
+
+</html>

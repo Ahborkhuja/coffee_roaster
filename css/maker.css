@@ -1,0 +1,184 @@
+@import url("./main.css");
+
+:root {
+  --opt-hov: #FDD6BA;
+  --opt-def: #F4F1EB;
+  --opt-act: #0E8784;
+  --menu-clo-dis-text: #83888F;
+}
+
+body {
+  background-color: #F2F2F2;
+}
+
+.main {
+  padding-bottom: 168px;
+}
+
+.main-inner {
+  background-image: url("../img/maker_img.png");
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  padding: 134px 85px;
+}
+
+.main-inner h1 {
+  margin-bottom: 32px;
+  font-family: var(--Fs);
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  color: #FEFCF7;
+}
+
+.main-inner p {
+  width: 445px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FEFCF7;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+/* ******************** process ******************** */
+.Working_proccess {
+  padding-bottom: 158px;
+}
+
+.process-inner {
+  background-color: #2C343E;
+  border-radius: 10px;
+  margin: 0;
+  padding: 91px 150px 107px 85px;
+}
+
+.process-item h3 {
+  color: #FEFCF7;
+}
+
+.process-item p {
+  color: #FEFCF7;
+}
+
+.graph {
+  width: 76%;
+}
+
+.line {
+  width: 52%;
+  z-index: 0;
+}
+
+.oval {
+  background-color: #2C343E;
+  position: relative;
+  z-index: 1;
+}
+
+/* coffee making additions and steps */
+.coffee_making_inner {
+  margin: 0 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap:wrap;
+}
+
+.making_steps {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.step a {
+  width: 225px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+}
+
+.step span {
+  font-family: var(--Fs);
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #83888F;
+}
+
+.step h4 {
+  font-family: var(--Fs);
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333D4B;
+}
+
+.second_column {
+  margin-left: 125px;
+}
+
+.title_item {
+  width: 730px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title_item h2 {
+  font-family: var(--Fs);
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #83888F;
+}
+
+.title_item img {
+  transform: rotate(360deg);
+}
+
+.inner_list {
+  margin-top: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inner-item {
+  padding: 32px 28px 84px 28px;
+  background-color: var(--opt-def);
+  border-radius: 8px;
+}
+
+.inner-item h4 {
+  font-family: var(--Fs);
+  margin-bottom: 24px;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333D4B;
+}
+
+.inner-item p {
+  width: 172px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #333D4B;
+}
+
+.inner-item:hover {
+  background-color: var(--opt-hov);
+}
+
+.inner-item:active  {
+  background-color: var(--opt-act);
+  color: #FEFCF7;
+}
+.inner-item:active h4 {
+  color: #FFFFFF;
+}
+.inner-item:active p{
+  color: #FEFCF7;
+}

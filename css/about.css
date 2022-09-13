@@ -1,0 +1,146 @@
+@import url("./main.css");
+
+.hero {
+  padding-bottom: 168px;
+}
+
+.hero-inner {
+  background-image: url("../img/about>hero>bg.png");
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  padding: 137px 85px;
+}
+
+.hero-inner h2 {
+  margin-bottom: 24px;
+  font-family: var(--Fs);
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #FEFCF7;
+}
+
+.hero-inner p {
+  width: 445px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FEFCF7;
+}
+
+/* ***********************commitment**************** */
+.commitment {
+  margin-bottom: 213px;
+}
+
+.commit-inner {
+  margin: 0 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.commit-text h2 {
+  margin-bottom: 32px;
+  font-family: var(--Fs);
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #333D4B;
+}
+
+.commit-text p {
+  width: 540px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #333D4B;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+/* *****************quality************************ */
+.quality {
+  padding-bottom: 168px;
+}
+
+.quality-inner {
+  padding: 88px 85px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #2C343E;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.quality-inner img {
+  margin-top: -176px;
+}
+
+.quality-text h2 {
+  margin-bottom: 32px;
+  font-family: var(--Fs);
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #FEFCF7;
+}
+
+.quality-text p {
+  width: 540px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FEFCF7;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+/* ===================headquarters================== */
+.headquartes {
+  padding-bottom: 168px;
+}
+.headquartes-inner{
+  margin:0 80px;
+}
+.process-title h2 {
+  margin-bottom: 72px;
+  font-family: var(--Fs);
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #83888F;
+}
+
+.countries-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.country {
+  display: flex;
+  flex-direction: column;
+  width: 285px;
+}
+
+.country img {
+  margin-bottom: 46px;
+  width: 51px;
+}
+
+.country h3 {
+  margin-bottom: 24px;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  color: #333D4B;
+}
+
+.country p {
+  width: 285px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #333D4B;
+}
