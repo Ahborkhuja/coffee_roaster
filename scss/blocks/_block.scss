@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+@import "header";
+@import "hero";
+@import "collection";
+@import "advantage";
+@import "process";
+@import "footer";
+// |^ it's for first page
+@import "header";
+@import "about-hero";
+@import "commitment";
+@import "quality";
+@import "headquartes";
+@import "footer";
+// |^ it's for second page
+@import "header";
+@import "maker-hero";
+@import "maker-process";
+@import "coffee-making";
+@import "footer";
+// |^ it's for third page

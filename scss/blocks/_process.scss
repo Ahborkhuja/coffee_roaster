@@ -1,0 +1,80 @@
+.working {
+  padding-bottom: 200px;
+}
+
+.working__inner {
+  margin: 0 80px;
+}
+
+.working__title h4 {
+  margin-bottom: 80px;
+  @include h4;
+  color: $Gy;
+}
+
+.working__graph {
+  width: 78%;
+  @include dis-fle(none,space-between);
+  margin-bottom: 67px;
+}
+
+.working__line {
+  position: absolute;
+  z-index: -1;
+  width: 57%;
+  height: 0;
+  margin-top: 13px;
+  border: 2px solid $PO;
+  background-color: $PO;
+}
+
+.working__oval {
+  width: 31px;
+  height: 31px;
+  background-color: $BG;
+  border: 1px solid $DC;
+  @include border(50%);
+}
+
+.working__list {
+  @include dis-fle(center, space-between);
+  margin-bottom: 64px;
+}
+
+.working__item {
+  width: 285px;
+}
+
+.working__item span {
+  display: inline-block;
+  margin-bottom: 38px;
+  @include h1;
+  color: $PO;
+}
+
+.working__item h3 {
+  width: 255px;
+  margin-bottom: 42px;
+  font-family: $Fs;
+  @include h3;
+  text-align: left;
+}
+
+.working__item p {
+  @include Bar_text;
+  color: $DGB;
+}
+
+.working__btn_link {
+  display: inline-block;
+  padding: 16px 31px;
+  @include btn_link;
+}
+
+.working__btn_link:hover {
+  background-color: $hov-col;
+}
+
+.working__btn_link:disabled {
+  background-color: $dis-col;
+}

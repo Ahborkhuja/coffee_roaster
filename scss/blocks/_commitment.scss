@@ -1,0 +1,22 @@
+.commitment {
+  margin-bottom: 213px;
+}
+
+.commitment__inner {
+  margin: 0 85px;
+  @include dis-fle(center,space-between);
+}
+
+.commitment__text h2 {
+  margin-bottom: 32px;
+  @include h2;
+  text-align: none;
+  color: $DGB;
+}
+
+.commitment__text p {
+  width: 540px;
+  @include Bar_text;
+  color: $DGB;
+  opacity: 0.8;
+}

@@ -1,0 +1,35 @@
+.hero__inner {
+  background-image: url("../../img/hero_img.png");
+  background-repeat: no-repeat;
+}
+
+.hero__inner__text {
+  width: 580px;
+  padding: 117px 0;
+  padding-left: 85px;
+}
+
+.hero__inner__text h1 {
+  margin-bottom: 32px;
+  @include h1;
+}
+
+.hero__inner__text p {
+  width: 440px;
+  margin-bottom: 56px;
+  @include Bar_text;
+  opacity: 0.8;
+}
+
+.hero__inner__text a {
+  padding: 16px 31px;
+  @include btn-link;
+}
+
+.hero__inner__text a:hover {
+  background-color: $hov-col;
+}
+
+.hero__inner__text a:disabled {
+  background-color: $dis-col;
+}

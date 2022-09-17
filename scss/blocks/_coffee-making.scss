@@ -1,0 +1,219 @@
+.coffee_making {
+  padding-bottom: 168px;
+}
+
+.coffee_making__inner {
+  margin: 0 85px;
+  @include dis-fle(baseline, space-between);
+}
+
+.coffee_making__menu_list {
+  @include dis-fle(baseline, none);
+  flex-direction: column;
+}
+
+.menu__item {
+  opacity: 0.4;
+}
+
+.menu__item:hover {
+  opacity: 0.6;
+}
+
+.menu__item a {
+  width: 225px;
+  @include dis-fle(center, space-between);
+  padding: 24px 0;
+}
+
+.menu__item span {
+  @include h4;
+  color: $Gy;
+}
+
+.menu__item h4 {
+  @include h4;
+  color: $DGB_dark;
+}
+
+.menu__item:active,
+.menu__item.actstep {
+  opacity: 1;
+}
+
+.menu__item:active,
+.menu__item.actstep span {
+  color: $DC;
+}
+
+
+.coffee_making__content_list {
+  margin-left: 125px;
+  padding-bottom: 88px;
+}
+
+.content__title_item {
+  width: 730px;
+  @include dis-fle(center, space-between);
+}
+
+.content__title_item h2 {
+  @include h2;
+  text-align: none;
+  color: $Gy;
+}
+
+.content__title_item img {
+  transform: rotate(180deg);
+}
+
+.content__inner_list:target {
+  display: flex;
+}
+
+.img_rotating {
+  transform: rotate(180deg);
+}
+
+.content__inner_list {
+  transition: all 1s ease-in-out;
+  margin-top: 56px;
+  @include dis-fle(center, space-between);
+  display: none;
+}
+
+#pref {
+  display: flex;
+}
+
+.content__inner_item {
+  position: relative;
+  padding: 32px 25px 84px 25px;
+  background-color: $def;
+  @include border(8px);
+  cursor: pointer;
+}
+
+.content__inner_item h4 {
+  margin-bottom: 24px;
+  @include h4;
+  color: $DGB;
+}
+
+.content__inner_item p {
+  width: 172px;
+  @include Bar_text;
+  color: $DGB;
+}
+
+.content__inner_item:hover {
+  background-color: $PO;
+}
+
+.content__inner_list input[type="radio"] {
+  display: none;
+}
+
+.content__inner_list input[type="radio"]:checked+.inner_item {
+  background-color: $DC;
+}
+
+.content__inner_list input[type="radio"]:checked+.inner_item h4 {
+  color: white;
+}
+
+.content__inner_list input[type="radio"]:checked+.inner_item p {
+  color: $BG;
+}
+
+.coffee_making__order_sum {
+  width: 730px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+}
+
+.coffee_making__sum {
+  background: $DGB_dark;
+  @include border(10px);
+  padding: 27px 64px;
+  mix-blend-mode: normal;
+}
+
+.coffee_making__sum p {
+  @include Bar_text;
+  text-transform: uppercase;
+  color: white;
+  opacity: 0.5;
+}
+
+.coffee_making__sum span {
+  @include text;
+}
+
+.coffee_making__btn_link {
+  margin-top: 40px;
+  border: none;
+}
+
+.coffee_making__order_summary {
+  width: 540px;
+  display: none;
+}
+
+.order_summary__title {
+  padding: 48px 56px 40px 56px;
+  background: $DGB_dark;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.order_summary__title h2 {
+  @include h2;
+  text-align: none;
+  color: white;
+}
+
+.order_summary__content {
+  padding: 57px 56px 56px 56px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background: $BG;
+  @include border(8px);
+}
+
+.OrSum {
+  @include text;
+  color: $Gy;
+}
+
+.highlight {
+  display: inline;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: $DC;
+}
+
+.content__informing {
+  margin-bottom: 47px;
+  @include Bar_text;
+  color: $DGB;
+  opacity: 0.8;
+}
+
+.price__btnlink {
+  width: 428px;
+  @include dis-fle(center, space-between);
+}
+
+.content__price {
+  margin-right: 19px;
+  @include h3;
+}
+
+.btn-link {
+  margin-top: 40px;
+  @include btn-link;
+}

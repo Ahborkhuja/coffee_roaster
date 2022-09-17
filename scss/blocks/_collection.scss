@@ -1,0 +1,43 @@
+.collection__inner {
+  width: 1111px;
+  height: 525px;
+  margin: 0 auto;
+  margin-top: 136px;
+  margin-bottom: 201px;
+
+}
+
+.collection__bg_text {
+  position: absolute;
+  z-index: -1;
+  width: 1111px;
+  height: 196px;
+  background-image: url("../../img/collectoin_bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.collection__list {
+  @include dis-fle(center,space-between);
+}
+
+.collection__item img {
+  width: 255px;
+  height: 193px;
+  margin-top: 126px;
+}
+
+.collection__item h4 {
+  margin-top: 72px;
+  @include h4;
+  text-align: center;
+  color: $DGB;
+}
+
+.collection__item p {
+  width: 255px;
+  margin-top: 24px;
+  text-align: center;
+  @include Bar_text;
+  color: $DGB;
+}

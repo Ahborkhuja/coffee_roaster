@@ -1,0 +1,89 @@
+.proccess {
+  padding-bottom: 158px;
+}
+
+.process__inner {
+  background-color: $DGB_dark;
+  @include border(10px);
+  padding: 91px 150px 107px 85px;
+}
+
+.working__title h4 {
+  margin-bottom: 80px;
+  @include h4;
+  color: $Gy;
+}
+
+.list__item h3 {
+  color: $BG;
+}
+
+.list__item p {
+  color: $BG;
+}
+
+.process__graph {
+  width: 76%;
+  @include dis-fle(none,space-between);
+  margin-bottom: 67px;
+}
+
+.process__line {
+  position: absolute;
+  width: 40%;
+  z-index: 0;
+  height: 0;
+  border: 2px solid $PO;
+  background-color: $PO;
+}
+
+.process__oval {
+  width: 31px;
+  height: 31px;
+  background-color: $DGB_dark;
+  position: relative;
+  z-index: 1;
+  border: 1px solid $DC;
+  @include border(50%);
+}
+
+.process__list {
+  @include dis-fle(center, space-between);
+  margin-bottom: 64px;
+}
+
+.list__item {
+  width: 285px;
+}
+
+.list__item span{
+  display: inline-block;
+  margin-bottom: 38px;
+  @include h1;
+  color: $PO;
+}
+
+.list__item h3{
+  width: 255px;
+  margin-bottom: 42px;
+  font-family: $Fs;
+  @include h3;
+  text-align:left;
+  color: $BG;
+}
+
+.list__item p{
+  @include Bar_text;
+  color: $BG;
+}
+.list__btn_link{
+  display: inline-block;
+  padding: 16px 31px;
+  @include btn_link;
+}
+.list__btn_link:hover{
+  background-color: $hov-col;
+}
+.list__btn_link:disabled{
+  background-color: $dis-col;
+}

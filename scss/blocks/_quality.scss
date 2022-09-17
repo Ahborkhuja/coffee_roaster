@@ -1,0 +1,27 @@
+.quality {
+  padding-bottom: 168px;
+}
+
+.quality__inner {
+  padding: 88px 85px;
+  @include dis-fle(none,space-between);
+  background-color: $DGB_dark;
+  background-repeat: no-repeat;
+  @include border(10px);
+}
+
+.quality__inner img {
+  margin-top: -176px;
+}
+
+.quality__text h2 {
+  margin-bottom: 32px;
+  @include h2;
+  text-align: left;
+}
+
+.quality__text p {
+  width: 540px;
+  @include Bar_text;
+  opacity: 0.8;
+}

@@ -1,0 +1,20 @@
+.site_header__inner {
+  @include dis-fle(center,space-between);
+}
+
+.site_header__logo {
+  margin: 43px 0;
+}
+
+.navbar__list {
+  @include dis-fle(center,space-between);
+}
+
+.navbar__link {
+  padding: 16.5px 10px;
+  @include link;
+}
+
+.navbar__link:hover {
+  color: $DGB;
+}

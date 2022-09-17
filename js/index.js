@@ -1,25 +1,10 @@
-var inner_list = document.querySelectorAll('.inner_list li');
-
-
-inner_list.forEach(li=> {
-  li.addEventListener('click',()=> {
-    li.classList.add('active'); 
-    resetLinks();
-    li.classList.add('active');
-  });
-});
-
-function resetLinks(){
-  inner_list.forEach(li=> li.classList.remove("active"));
-}
-
 var making_steps = document.querySelectorAll('.making_steps li');
+var rotating = document.querySelectorAll('.img_rotating'); 
 
 making_steps.forEach(li=> {
   li.addEventListener('click',()=> {
-    li.classList.add('actstep');
-    resetSteps();
-    li.classList.add('actstep');
+    li.classList.toggle('actstep');
+    rotating.classList.toggle('rotating_img');
   });
 });
 function resetSteps(){

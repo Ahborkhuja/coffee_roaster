@@ -1,0 +1,40 @@
+.headquartes {
+  padding-bottom: 168px;
+}
+
+.headquartes__inner {
+  margin: $global_padd;
+}
+
+.headquartes__process_title h4 {
+  margin-bottom: 72px;
+  @include h4;
+  color: $Gy;
+}
+
+.headquartes__country_list {
+  @include dis-fle(center,space-between);
+}
+
+.country__item {
+  display: flex;
+  flex-direction: column;
+  width: 285px;
+}
+
+.country__item img {
+  margin-bottom: 46px;
+  width: 51px;
+}
+
+.country__item h3 {
+  margin-bottom: 24px;
+  @include h3;
+  text-align: left;
+}
+
+.country__item p {
+  width: 285px;
+  @include Bar_text;
+  color: $DGB;
+}

@@ -1,0 +1,21 @@
+.about_hero {
+  padding-bottom: 168px;
+}
+
+.about_hero__inner {
+  background-image: url("../../img/about>hero>bg.png");
+  background-repeat: no-repeat;
+  @include border(10px);
+  padding: 137px 85px;
+}
+
+.about_hero__inner h2 {
+  margin-bottom: 24px;
+  @include h2;
+  text-align: left;
+}
+
+.about_hero__inner p {
+  width: 445px;
+  @include Bar_text;
+}

@@ -1,0 +1,39 @@
+.site_footer {
+  background-color: $DGB_dark;
+}
+
+.site_footer__inner {
+  @include dis-fle(center,space-between);
+}
+
+.site_footer__logo_wrap {
+  @include dis-fle(center,space-between);
+}
+
+.site_footer__logo {
+  margin: 47px 0;
+}
+
+.navbar-list {
+  margin-left: 86px;
+  @include dis-fle(center,space-between);
+}
+
+.nav-link {
+  padding: 10px 16px;
+  @include link;
+}
+.fo_ho:hover{
+  color: $BG;
+}
+.icon-link {
+  display: inline-block;
+  padding: 3px;
+}
+.icon-link i{
+  display: inline-block;
+  color: #fff;
+}
+.icon-link i:hover{  
+  color: $PO;
+} 
