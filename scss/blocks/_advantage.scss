@@ -3,16 +3,16 @@
 }
 
 .advantage__inner {
-  height: 580px;
-  background-color: $DGB;
+  width: 100%;
   @include border(10px);
 }
 
 .advantage__content {
+  padding: 100px 370px;
+  background-color: $DGB;
   @include dis-fle(center, center);
   flex-direction: column;
-  padding-top: 100px;
-  padding-bottom: 86px;
+  border-radius: 10px 10px 0 0;
 }
 
 .advantage__content h2 {
@@ -21,10 +21,18 @@
 }
 
 .advantage__content p {
-  width: 528px;
+  max-width: 528px;
+  width: 100%;
   @include Bar_text;
   text-align: center;
   opacity: 0.8;
+}
+
+.empty {
+  margin-top: -20px;
+  height: 350px;
+  background-color: #2f3844;
+  border-radius: 0 0 10px 10px;
 }
 
 .advantage__list {
@@ -33,15 +41,13 @@
 }
 
 .advantage__item {
-  width: 350px;
-  height: 390px;
   @include dis-fle(center, space-between);
-  justify-content: center;
   flex-direction: column;
   padding: 48px;
   margin: 0 15px;
   background: $DC;
   @include border(8px);
+  margin-top: 100px;
 }
 
 .advantage__item img {
@@ -58,4 +64,80 @@
   margin-top: 24px;
   @include Bar_text;
   text-align: center;
+}
+
+@media screen and (max-width: 930px) {
+  .advantage__content {
+    padding: 56px 74px;
+  }
+
+  .advantage__content h2 {
+    margin: 0;
+    margin-bottom: 24px;
+    font-size: 32px;
+  }
+
+  .empty {
+    height: 635px;
+  }
+
+  .advantage__list {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .advantage__item {
+    flex-direction: row;
+    margin: 24px 56px;
+    padding: 41px 48px 41px 70px;
+  }
+
+  .advantage__title_desc {
+    margin-left: 55px;
+  }
+
+  .advantage__item img {
+    margin: 0;
+  }
+
+  .advantage__item h4,
+  .advantage__item p {
+    margin: 0;
+    text-align: left;
+  }
+
+  .advantage__item p {
+    margin-top: 16px;
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .advantage__item {
+    flex-direction: column;
+    padding: 51px 24px;
+  }
+
+  .advantage__item {
+    margin: 0;
+    margin-top: 19px;
+    margin-bottom: 24px;
+  }
+
+  .advantage__title_desc {
+    margin: 0;
+  }
+
+  .advantage__item h4 {
+    margin-top: 30px;
+  }
+
+  .advantage__item h4,
+  .advantage__item p {
+    margin: 0;
+    margin-top: 24px;
+    text-align: center;
+  }
 }

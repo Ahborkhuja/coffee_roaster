@@ -46,13 +46,13 @@
   color: $DC;
 }
 
-
-.coffee_making__content_list {
-  margin-left: 125px;
+.coffee_making__content_wrap {
   padding-bottom: 88px;
+  margin-left: 125px;
 }
 
 .content__title_item {
+  margin-top: 88px;
   width: 730px;
   @include dis-fle(center, space-between);
 }
@@ -63,16 +63,23 @@
   color: $Gy;
 }
 
-.content__title_item img {
-  transform: rotate(180deg);
+.img_rotating {
+  transform: rotate(90deg);
 }
-
+.rotor{
+  transform: rotate(270deg);
+}
 .content__inner_list:target {
   display: flex;
 }
+.content__inner_list:hover + img{
+  
+}
+.content__inner_list:disabled{
 
-.img_rotating {
-  transform: rotate(180deg);
+}
+.content__inner_list:target+.rotor {
+  transform: rotate(360deg)!important;
 }
 
 .content__inner_list {
@@ -114,15 +121,15 @@
   display: none;
 }
 
-.content__inner_list input[type="radio"]:checked+.inner_item {
+.content__inner_list input[type="radio"]:checked+.content__inner_item {
   background-color: $DC;
 }
 
-.content__inner_list input[type="radio"]:checked+.inner_item h4 {
+.content__inner_list input[type="radio"]:checked+.content__inner_item h4 {
   color: white;
 }
 
-.content__inner_list input[type="radio"]:checked+.inner_item p {
+.content__inner_list input[type="radio"]:checked+.content__inner_item p {
   color: $BG;
 }
 
@@ -133,47 +140,54 @@
   justify-content: right;
 }
 
-.coffee_making__sum {
+.order__sum {
   background: $DGB_dark;
   @include border(10px);
   padding: 27px 64px;
   mix-blend-mode: normal;
 }
 
-.coffee_making__sum p {
+.order__sum p {
   @include Bar_text;
   text-transform: uppercase;
   color: white;
   opacity: 0.5;
 }
 
-.coffee_making__sum span {
+.order__sum span {
   @include text;
 }
 
-.coffee_making__btn_link {
+.order__btn_link {
   margin-top: 40px;
+  padding: 15px 35px;
+  @include btn_link;
   border: none;
 }
-
+.order__btn_link:hover{
+  background-color: $hov-col;
+}
+.order__btn_link:active{
+  background-color: $dis-col;
+}
 .coffee_making__order_summary {
   width: 540px;
   display: none;
 }
 
-.order_summary__title {
+.summary__title {
   padding: 48px 56px 40px 56px;
   background: $DGB_dark;
   border-radius: 8px 8px 0px 0px;
 }
 
-.order_summary__title h2 {
+.summary__title h2 {
   @include h2;
   text-align: none;
   color: white;
 }
 
-.order_summary__content {
+.summary__content {
   padding: 57px 56px 56px 56px;
   display: flex;
   align-items: center;
@@ -182,12 +196,12 @@
   @include border(8px);
 }
 
-.OrSum {
+.summary__OrSum {
   @include text;
   color: $Gy;
 }
 
-.highlight {
+.summary__highlight {
   display: inline;
   font-family: inherit;
   font-weight: inherit;
@@ -196,24 +210,25 @@
   color: $DC;
 }
 
-.content__informing {
+.summary__informing {
   margin-bottom: 47px;
   @include Bar_text;
   color: $DGB;
   opacity: 0.8;
 }
 
-.price__btnlink {
+.summary__btnlink {
   width: 428px;
   @include dis-fle(center, space-between);
 }
 
-.content__price {
+.summary__price {
   margin-right: 19px;
   @include h3;
 }
 
-.btn-link {
+.summary__btn-link {
+  padding: 15px 35px;
   margin-top: 40px;
   @include btn-link;
 }

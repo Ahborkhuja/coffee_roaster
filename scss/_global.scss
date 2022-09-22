@@ -8,7 +8,7 @@
   max-width: $global_size;
   width: 100%;
   margin: 0 auto;
-  padding:$global_padd;
+  padding: 0 80px;
 }
 
 a {
@@ -23,4 +23,14 @@ ul {
 body {
   font-family: $most_use_ff;
   background: $BG;
+}
+@media screen and (max-width: 930px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .container {
+    padding: 0 20px;
+  }
 }

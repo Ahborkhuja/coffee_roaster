@@ -103,11 +103,12 @@
               </a>
             </li>
           </ul>
+          <div class="coffee_making__content_wrap">
             <ul class="coffee_making__content_list content">
-              <li class="content__second_row">
+              <li class="content__row">
                 <a href="#pref" class="content__title_item">
                   <h2>How do you drink your coffee?</h2>
-                  <img class="img_rotating" src="./img/arrow.svg" alt="arrow">
+                  <img class="img_rotating rotor" src="./img/arrow.svg" alt="arrow">
                 </a>
                 <form class="content__inner_list" id="pref">
                   <input type="radio" name="coffee" id="one">
@@ -127,10 +128,10 @@
                   </label>
                 </form>
               </li>
-              <li class="content__second_row">
+              <li class="content__row">
                 <a href="#bety" class="content__title_item">
                   <h2>What type of coffee?</h2>
-                  <img src="./img/arrow.svg" alt="arrow">
+                  <img class="img_rotating" src="./img/arrow.svg" alt="arrow">
                 </a>
                 <form class="content__inner_list" id="bety">
                   <input type="radio" name="coffee" id="four">
@@ -150,7 +151,7 @@
                   </label>
                 </form>
               </li>
-              <li class="content__second_row">
+              <li class="content__row">
                 <a href="#quantity" class="content__title_item">
                   <h2>How much would you like?</h2>
                   <img class="img_rotating" src="./img/arrow.svg" alt="arrow">
@@ -173,10 +174,12 @@
                   </label>
                 </form>
               </li>
-              <li class="content__second_row">
+              <li class="content__row">
                 <a href="#gropt" class="content__title_item">
                   <h2>Want us to grind them?</h2>
-                  <img class="img_rotating" src="./img/arrow.svg" alt="arrow">
+                  <div class="img_rotating">
+                    <i class="fa-sharp fa-solid fa-angle-right"></i>
+                  </div>
                 </a>
                 <form class="content__inner_list" id="gropt">
                   <input type="radio" name="coffee" id="thirteen">
@@ -196,7 +199,7 @@
                   </label>
                 </form>
               </li>
-              <li class="content__second_row">
+              <li class="content__row">
                 <a href="#delivery" class="content__title_item">
                   <h2>How often should we deliver?</h2>
                   <img class="img_rotating" src="./img/arrow.svg" alt="arrow">
@@ -220,31 +223,35 @@
                 </form>
               </li>
             </ul>
-            <div class="coffee_making__order_sum">
-              <div class="coffee_making__sum">
+            <div class="coffee_making__order_sum order">
+              <div class="order__sum">
                 <p>Order Summary</p>
                 <span>“I drink my coffee as Filter, with a Decaf type of bean. 250g ground ala Cafetiare, sent to me
                   Every Week.”</span>
               </div>
-              <button type="submit" class="coffee_making__btn_link">Create your plan</button>
+              <button type="submit" class="order__btn_link">Create your plan</button>
             </div>
-            <div class="coffee_making__order_summary order_summary">
-              <div class="order_summary__title">
-                <h2>Order Summary</h2>
+          </div>
+          <div class="coffee_making__order_summary summary">
+            <div class="summary__title">
+              <h2>Order Summary</h2>
+            </div>
+            <div class="summary__content">
+              <div class="summary__OrSum">"I drink my coffee as <div class="summary__highlight">Filter</div>, with a
+                <div class="summary__highlight">Decaf</div> type of bean, <div class="summary__highlight">250g</div>
+                ground
+                ala <div class="summary__highlight">Cafetiare</div>, sent to me <div class="summary__highlight">Every
+                  Week</div>."
               </div>
-              <div class="order_summary__content">
-                <div class="OrSum">"I drink my coffee as <div class="highlight">Filter</div>, with a<div
-                    class="highlight">Decaf</div> type of bean, <div class="highlight">250g</div> ground ala <div
-                    class="highlight">Cafetiare</div>, sent to me <div class="highlight">Every Week</div>."</div>
-                <span class="content__informing">Is this correct? You can proceed to checkout or go back to plan
-                  selection if something is off. Subscription discount codes can also be redeemed at the
-                  checkout.</span>
-                <div class="price__btnlink">
-                  <div class="content__price"> $14.00/mo </div>
-                  <button type="submit" class="btn-link">Checkout</button>
-                </div>
+              <span class="summary__informing">Is this correct? You can proceed to checkout or go back to plan
+                selection if something is off. Subscription discount codes can also be redeemed at the
+                checkout.</span>
+              <div class="summary__btnlink">
+                <div class="summary__price"> $14.00/mo </div>
+                <button type="submit" class="summary__btn-link">Checkout</button>
               </div>
             </div>
+          </div>
         </div>
       </div>
     </section>
